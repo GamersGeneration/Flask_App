@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+</head>
+
+<body>
+    <section class="Sub-header">
+        <nav>
+            <a href="#" class="logo">Farm
+                <i class="fab fa-staylinked"></i>Protection
+            </a>
+            <div class="nav-links" id="navLinks">
+                <!-- reposnive bar open and close -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="course.html">Our Model</a></li>
+                    <li><a href="blog.html">Project Details</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <!-- reposnive bar open and close -->
+        </nav>
+        <h1>Full Project Details</h1>
+    </section>
+
+    <!-- Blog Page Section Start -->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <h2>Our Model Description</h2>
+                <h5>Aug 1, 2021</h5>
+                <img src="img/crop7.jpg" alt="">
+                <p><h4>Problem Description:</h4>
+Agriculture field faces significant challenges in protecting crops and farms from bigger pest such
+as cows, goats, elephants, nilgais, monkeys, and others which causes extensive damage. Even
+few in number, but can destroy whole farm. To address this issue, we are doing project on Farm
+Protection from cow using Multimodal Data (Especially Image Processing, CNN) And Sensors
+that aims to develop a system that leverages sensors like PIR sensors and Pi cameras to detect the
+presence of these animals in agricultural fields. By utilizing machine learning methodologies and
+analysis, we will accurately detect the actual presence of cow. When a cow is detected, a buzzer
+and light will be triggered to deter the animal from further damaging the agriculture field.
+Additionally, a message and image of the animal will be displayed on the web application that
+we will create as part of this project, providing farmers with a real-time update on the status of
+their crops and any potential threats.</p>
+                <br>
+                <p><h4>Sensors, Data Used, Methodology:</h4>
+In this project, we will be using a combination of sensors and data processing techniques to
+detect and track animals in real-time. Specifically, we will be using Raspberry Pi, Pi camera,
+buzzer, LED light, PIR sensor, wires, USB cable, and other hardware components to create a
+system that can monitor animal presence on a farm. The data collected from these sensors will be
+processed using image processing algorithms, including OpenCV libraries in Python, to detect
+and track the animal movements. We will be using saturation values to extract features from the
+images, and then apply Convolutional Neural Networks (CNN) and Artificial Neural Networks
+(ANN) for classification.
+
+To train our machine learning models, we will be using a variety of data sources, including
+Kaggle, Google Images, etc.
+We will develop a web application using Java, HTML, and CSS providing display real-time
+updates of the system's monitoring activities, including detected animal movements.
+By using convolutional neural networks and artificial neural networks, we aim to achieve high
+accuracy in animal classification and minimize false alarms.</p>
+                <br>
+                <p><h4>Cow Detection in Field</h4>One of the major part of this project is to detect the presence of cow in the agriculture field. When
+                    ever cow enter into the field, Camera and PIR sensor is used to detect and then Buzzer and LED light is
+                    ON which makes the animal run away from the field.</p>
+                <br>
+                <p><h4>Percentage of field Damaged</h4>
+                  When ever the animal runs aways upon the action of Buzzer and LED light on detection. After some minutes
+                    the Pi camera click the picture of the field and then using the CNN and other machine learning algorithm,
+                    calculate the amount of agriculture field damaged.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Blog Page Section end -->
+
+    <!-- Footer Section start -->
+    <section class="footer">
+        <hr>
+        <h4>About Us</h4>
+         <p>This Website aim Farm protecion from cow using Image Processing, CNN, Sensor
+            <br> using Image Processing, CNN, Raspberry pi.
+            <br>Sensor.
+        </p>
+    </section>
+    <!-- Footer Section end -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
